@@ -1,13 +1,14 @@
 {
-  "name": "landingpage-react-template",
+  "name": "repaydcore-landingpage",
   "private": true,
-  "homepage": ".",
+  "homepage": "https://repaydcore.github.io/landingPage",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "chokidar": "^3.5.1",
     "emailjs-com": "^2.6.4",
+    "gh-pages": "^4.0.0",
     "particles-bg": "^2.5.5",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
@@ -18,9 +19,10 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build && node script.js",
+    "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -b master -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
